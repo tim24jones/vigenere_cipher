@@ -1,9 +1,8 @@
-#def texttype(mode): (to be implemented later: choose what types of characters to use.  Right now, we'll use all printable characters
 import string
 
 def char_to_number(char):
     char_num=0
-    for i in range(len(texttype):
+    for i in range(len(alpha_str):
         if texttype[i]==char:
             char_num=i
             return char_num
@@ -11,7 +10,7 @@ def char_to_number(char):
             print('Error: Character is not in selected character set')
 
 def num_to_char(num):
-    return texttype[num];
+    return alpha_str[num]
 
 def caesar(input_char,char):
     char_to_number(char)
@@ -22,8 +21,6 @@ def vigenere(keyword,input_str):
     for i in range len(input_str)
         output=output+[caesar(input_str[i],keyword[len(inputstr[i])%len(keyword)])]
     return output
-
-class 
 
 def main():
     input_str=("Please type the message to be encoded: ")
@@ -68,5 +65,5 @@ def main():
     vigenere(keyword,message_str)
     #glue together list into output_string
 
-def alpha_no_dups(input_string)
+def alpha_no_dups(input_string):
 #check for duplicate characters in a string
