@@ -1,5 +1,3 @@
-import string
-
 def char_to_number(char,alpha_str):
     for i in range(len(alpha_str)):
         if alpha_str[i]==char:
