@@ -1,4 +1,4 @@
-#alphabet handling
+#alphabet handling leftover code
 
     mode=input("Please select mode: Type 'printable' to use numbers, letters, punctuation, and spaces but not whitespaces other control characters. Type 'letters and numbers' 'letters' 'lowercase' or 'numbers' to use those options, or 'custom' to type a different alphabet.")
     modelettered=filter(lambda x:x in (string.letters)
