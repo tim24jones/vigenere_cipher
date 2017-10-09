@@ -1,4 +1,36 @@
-notes for decoding process:
+def decode_with_sequential_alpha(input_str,alpha_str,keylength):
+    str_list=[] #list made of strings separated by keyletter
+    for i in range(len(keylength):
+        for j in range(len(input_str)):
+            if j%keylength==i:
+                str_list=str_list+[keylength%i]
+    for item in len(str_list):
+        letter_freq(item)
+            #then sort dictionary into a list by alpha_str
+            #set highest frequency to space, then e, then t, then a
+            #check for the other of these 4 letters to have high frequency before iterating to the next
+            #repeat for next list item
+            #put together, test for words to verify or display
+
+def letter_freq: #create dictionary for letter freqency
+
+class def decoding_message #possibly useful for later cases, create class with a length of input_str, add letters to middle, display null as _
+
+def check_for_words:
+
+
+#in the future:
+def decode_with_unsequential_alpha(input_str,keylength)
+# have to order completely by letter frequency.  Could use word suggest, monocharacters 'I' and 'a', common digraphs, trigraphs etc. to help
+
+def decode_with_unknown_keylength(input_str,alpha_str)
+#this will be the same as the first, but iterate over keylength
+                   
+#and hopefully putting them together to the ultimate goal:
+def decode(input_str):
+#which should output both the keyword and the output_string
+                   
+#notes for decoding process:
 
 #letter frequency stats:
 #space:16.393
