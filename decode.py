@@ -1,23 +1,25 @@
-def decode_with_sequential_alpha(input_str,alpha_str,keylength):
+def keylen_sep(input_str,alpha_str,keylength:) #separate message into strings encoded by each letter of the keyword
     str_list=[] #list made of strings separated by keyletter
     for i in range(len(keylength):
         for j in range(len(input_str)):
             if j%keylength==i:
                 str_list=str_list+[keylength%i]
-    for item in len(str_list):
-        letter_freq(item)
-            #then sort dictionary into a list by alpha_str
-            #set highest frequency to space, then e, then t, then a
-            #check for the other of these 4 letters to have high frequency before iterating to the next
-            #repeat for next list item
-            #put together, test for words to verify or display
 
-def letter_freq: #create dictionary for letter freqency
+def dict_freq(str_list) #create dict of letter frequency
+    return dict_freq
+
+def dict_sort(dict_freq,alpha_str) #sort dictionary
+    return letter_list
+
+#create dictionary of letter_list to letter_frequency (defined string etaoinsrh...
+
+#fill in message one letter at a time, check for new words after each time, reject or confirm letter by use of new words, iterate to next likely frequency if non-word strings show up.  If all have non-word strings, output option with most word strings.
+
+Could use a new class to show these:
 
 class def decoding_message #possibly useful for later cases, create class with a length of input_str, add letters to middle, display null as _
-
-def check_for_words:
-
+    __init__():#all the variables used for decoding
+    __str__(partial_keyword,partial_input_str):
 
 #in the future:
 def decode_with_unsequential_alpha(input_str,keylength)
