@@ -5,13 +5,29 @@ def keylen_sep(input_str,alpha_str,keylength:) #separate message into strings en
             if j%keylength==i:
                 str_list=str_list+[keylength%i]
 
-def dict_freq(str_list) #create dict of letter frequency
-    return dict_freq
+def dict_freq_count(p,letter): #counting function used in dict_freq
+    letter=str(letter)
+    a=0
+    t=0
+    for i in range (len(p)):
+        if p[i]==letter:
+            a=a+1
+            t=t+1
+        else:
+            t=t+1
+    dict={letter:a}
+    return(dict)
 
-def dict_sort(dict_freq,alpha_str) #sort dictionary
-    return letter_list
+def dict_freq(input_str,alpha_str): #create a dict of letter frequency
+    for i in range(len(alphastr)):
+        dict_freq={}
+        dict_freq=dict_freq.items()+dict_freq_count(newstr,alphastr[i]).items()
+        return dict_freq
 
-#create dictionary of letter_list to letter_frequency (defined string etaoinsrh...
+def dict_sort(dict_freq,alpha_str): #sort dictionary by value, use keys of dict_freq and known list of character frequency to create a new dict
+    letter_str=' etaoinsrh'#... use these chars as values for new dictionary
+    #...function to be built
+    return dict_key
 
 #fill in message one letter at a time, check for new words after each time, reject or confirm letter by use of new words, iterate to next likely frequency if non-word strings show up.  If all have non-word strings, output option with most word strings.
 
