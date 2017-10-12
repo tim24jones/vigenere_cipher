@@ -60,22 +60,10 @@ def dict_sort(input_str,alpha_str): #sort dictionary by value, use keys of dict_
 # show message and let user choose best of the calculated options
 # compare discrepancies and choose options which create words (or the most words)
 
-Could use a new class to show these:
-
-class def decoding_message #possibly useful for later cases, create class with a length of input_str, add letters to middle, display null as _
-    __init__():#all the variables used for decoding
-    __str__(partial_keyword,partial_input_str):
-
-#in the future:
-def decode_with_unsequential_alpha(input_str,keylength)
-# have to order completely by letter frequency.  Could use word suggest, monocharacters 'I' and 'a', common digraphs, trigraphs etc. to help
-
-def decode_with_unknown_keylength(input_str,alpha_str)
-#this will be the same as the first, but iterate over keylength
-                   
-#and hopefully putting them together to the ultimate goal:
-def decode(input_str):
-#which should output both the keyword and the output_string
+                                 
+#still to be done:
+# def decode_with_unknown_keylength(input_str,alpha_str)
+#the same as the first, but iterating over keylength
                    
 #notes for decoding process:
 
@@ -124,8 +112,3 @@ def decode(input_str):
 #d.check("Hello")
 #d.check("Helo")
 #d.suggest("Helo")
-
-#decode with known key length (probably recommended as first step), detect possible words
-#decode probably limited to letters only initially
-#could display version with most English words or letters within words
-#extend by repeating for increased key length
