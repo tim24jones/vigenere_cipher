@@ -4,7 +4,23 @@ def keylen_sep(input_str,alpha_str,keylength:) #separate message into strings en
         for j in range(len(input_str)):
             if j%keylength==i:
                 str_list=str_list+[keylength%i]
+     return str_list
 
+def keylist decode(input_str,alpha_str,keylength): #take list of coded strings and switch values for decoded values
+    decoded_strings=['']*len(str_list)
+    keylen_sep(input_str,alpha_str,keylength)
+    for a in range(len(str_list):
+        dict_sort(str_list[a],alpha_str)
+        for b in range len(str_list[a]):
+            decoded_strings[a]=decoded_strings[a]+keydict.get(str_list[a][b])
+    return decoded_strings
+
+def keylen_integ(decoded_strings,keylength):
+    decoded_strings,keylength
+    for i in range(len(decoded_strings)):
+        for j in range(len(decoded_strings[i]):
+            decoded_list=decoded_list[i][j] #function still to be finished
+                   
 def dict_freq_count(p,letter): #counting function used in dict_freq
     letter=str(letter)
     a=0
@@ -18,18 +34,28 @@ def dict_freq_count(p,letter): #counting function used in dict_freq
     dict={letter:a}
     return(dict)
 
-def dict_freq(input_str,alpha_str): #create a dict of letter frequency
+def dict_freq(input_str,alpha_str): #create a list of letters by frequency, also contains dictionary of coded letter frequency, currently not used
     for i in range(len(alphastr)):
         dict_freq={}
         dict_freq=dict_freq.items()+dict_freq_count(newstr,alphastr[i]).items()
-        return dict_freq
+        sorted_tuple_list=sorted(dict_freq.items(),key=lambda x:x[1]
+        valuelist=dict_freq.items
+        return valuelist
 
-def dict_sort(dict_freq,alpha_str): #sort dictionary by value, use keys of dict_freq and known list of character frequency to create a new dict
-    letter_str=' etaoinsrh'#... use these chars as values for new dictionary
-    #...function to be built
-    return dict_key
+def dict_sort(input_str,alpha_str): #sort dictionary by value, use keys of dict_freq and known list of character frequency to create a new dict
+    letter_str=' etaoinsrhldcumfpgwybvkxjqz' #... use these chars as values for new dictionary
+    keylist=[]
+    valuelist=dict_freq(input_str,alpha_str)
+    for i in range len(letter_str):
+        keylist=keylist+letter_str[i]
+    keydict=dict(zip(keylist,valuelist))
+    return keydict
 
-#fill in message one letter at a time, check for new words after each time, reject or confirm letter by use of new words, iterate to next likely frequency if non-word strings show up.  If all have non-word strings, output option with most word strings.
+#compare letter frequency for each char of keyword, fill in those which match, 
+#after that, either:
+# show message with blanks for user to guess (first implementation)
+# show message and let user choose best of the calculated options
+# compare discrepancies and choose options which create words (or the most words)
 
 Could use a new class to show these:
 
