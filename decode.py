@@ -17,9 +17,12 @@ def keylist decode(input_str,alpha_str,keylength): #take list of coded strings a
 
 def keylen_integ(decoded_strings,keylength):
     decoded_strings,keylength
-    for i in range(len(decoded_strings)):
-        for j in range(len(decoded_strings[i]):
-            decoded_list=decoded_list[i][j] #function still to be finished
+    for i in range(len(decoded_strings[0])):
+        for j in range(len(decoded_strings)):
+            decoded_list=decoded_list+[decoded_list[i][j]]
+    glue=''
+    message=glue.join(decoded_list)
+    return message
                    
 def dict_freq_count(p,letter): #counting function used in dict_freq
     letter=str(letter)
