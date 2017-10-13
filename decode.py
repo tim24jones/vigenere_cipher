@@ -41,12 +41,14 @@ def dict_freq_count(p,letter): #counting function used in dict_freq
     return(dict)
 
 def dict_freq(input_str,alpha_str): #create a list of letters by frequency, also contains dictionary of coded letter frequency, currently not used
-    for i in range(len(alphastr)):
-        dict_freq={}
-        dict_freq=dict_freq.items()+dict_freq_count(newstr,alphastr[i]).items()
-        sorted_tuple_list=sorted(dict_freq.items(),key=lambda x:x[1]
-        valuelist=dict_freq.items
-        return valuelist
+    frequency_list=[]
+    for i in range(len(alpha_str)):
+        frequency_dict={}
+        frequency_list=frequency_list+frequency_dict.items()+dict_freq_count(input_str,alpha_str[i]).items()
+    valuelist=frequency_list
+    return valuelist
+
+# print(dict_freq('abedabededg','abcdefgh')) (tests both dict_freq and dict_freq_count)
 
 def dict_sort(input_str,alpha_str): #sort dictionary by value, use keys of dict_freq and known list of character frequency to create a new dict
     letter_str=' etaoinsrhldcumfpgwybvkxjqz' #... use these chars as values for new dictionary
