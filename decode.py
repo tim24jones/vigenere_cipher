@@ -1,10 +1,13 @@
-def keylen_sep(input_str,alpha_str,keylength:) #separate message into strings encoded by each letter of the keyword
-    str_list=[] #list made of strings separated by keyletter
-    for i in range(len(keylength):
-        for j in range(len(input_str)):
-            if j%keylength==i:
-                str_list=str_list+[keylength%i]
-     return str_list
+#functions are untested unless a sample test call exists below them.  Code is in progress.
+def keylen_sep(input_str,keylength): #separate message into strings encoded by each letter of the keyword
+    str_list=['']*(keylength)
+    for j in range(keylength):
+        for i in range(len(input_str)):
+            if i%keylength==j:
+                str_list[j]=str_list[j]+input_str[i]
+    return str_list
+
+# print(keylen_sep('reallylongstringoflettersthatcreateamessagetobesplitupintopieceswhichdoesntneedtoavoidspacesthewayimdoing',4))
 
 def keylist decode(input_str,alpha_str,keylength): #take list of coded strings and switch values for decoded values
     decoded_strings=['']*len(str_list)
