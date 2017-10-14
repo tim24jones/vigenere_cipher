@@ -1,4 +1,3 @@
-#functions are untested unless a sample test call exists below them.
 def keylen_sep(input_str,keylength): #separate message into strings encoded by each letter of the keyword
     str_list=['']*(keylength)
     for j in range(keylength):
