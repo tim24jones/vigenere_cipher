@@ -1,4 +1,4 @@
-#functions are untested unless a sample test call exists below them.  Code is in progress.
+#functions are untested unless a sample test call exists below them.
 def keylen_sep(input_str,keylength): #separate message into strings encoded by each letter of the keyword
     str_list=['']*(keylength)
     for j in range(keylength):
@@ -26,6 +26,7 @@ def keylen_integ(decoded_strings,keylength):
     glue=''
     message=glue.join(decoded_list)
     return message
+#print(keylen_integ(['aei','bfj','cgk','dhl'],3))
                    
 def dict_freq_count(p,letter): #counting function used in dict_freq
     letter=str(letter)
@@ -53,11 +54,13 @@ def dict_freq(input_str,alpha_str): #create a list of letters by frequency, also
 def dict_sort(input_str,alpha_str): #sort dictionary by value, use keys of dict_freq and known list of character frequency to create a new dict
     letter_str=' etaoinsrhldcumfpgwybvkxjqz' #... use these chars as values for new dictionary
     keylist=[]
-    valuelist=dict_freq(input_str,alpha_str)
-    for i in range len(letter_str):
-        keylist=keylist+letter_str[i]
-    keydict=dict(zip(keylist,valuelist))
+    valuedict=dict_freq(input_str,alpha_str)
+    for i in range(len(letter_str)):
+        keylist=keylist+[letter_str[i]]
+    keydict=dict(zip(keylist,list(valuedict.keys()))
     return keydict
+
+#print(dict_sort('aaaaaaaabbbbbbcccccddddeeef','aeinot'))
 
 #compare letter frequency for each char of keyword, fill in those which match, 
 #after that, either:
